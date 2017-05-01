@@ -7,6 +7,10 @@ target 'starter' do
 
   # Pods for starter
 
+  pod 'SnapKit', '~> 3.2.0'
+  pod 'Firebase', '~> 3.17.0'
+
+
   target 'starterTests' do
     inherit! :search_paths
     # Pods for testing
