@@ -13,6 +13,7 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var locationManager:CLLocationManager!
@@ -64,6 +65,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01,longitudeDelta: 0.01))
 
         self.mapView.setRegion(region, animated: true)
+        
+        Firebase().updateUserLocation(lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){

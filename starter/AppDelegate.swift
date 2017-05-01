@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application 
         
-        //FIRApp.configure() //Configure
-        
+        FIRApp.configure() //Configure
+        FIRAuth.auth()?.signInAnonymously() { (user, error) in
+            // ...
+            
+            let isAnonymous = user!.isAnonymous  // true
+            let uid = user!.uid
+            
+        }
         
         return true
     }
