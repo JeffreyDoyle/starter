@@ -15,6 +15,7 @@
 		3B9137361EB7B62200DF73D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9137341EB7B62200DF73D9 /* LaunchScreen.storyboard */; };
 		3B9137411EB7B62200DF73D9 /* starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9137401EB7B62200DF73D9 /* starterTests.swift */; };
 		3B91374C1EB7B62200DF73D9 /* starterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91374B1EB7B62200DF73D9 /* starterUITests.swift */; };
+		3B91375A1EB7BB2C00DF73D9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9137591EB7BB2C00DF73D9 /* MapKit.framework */; };
 		57E741EC911D8144AFB2FDEE /* Pods_starterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594E4233D24EEBF9056A216C /* Pods_starterTests.framework */; };
 		5E53292D81CE01451C916859 /* Pods_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB5D6C5EA70D0B27BD19513 /* Pods_starter.framework */; };
 		7EFDF1373D20B5A772090415 /* Pods_starterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE45974D8692774CB5B57C /* Pods_starterUITests.framework */; };
@@ -54,6 +55,7 @@
 		3B9137471EB7B62200DF73D9 /* starterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B91374B1EB7B62200DF73D9 /* starterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starterUITests.swift; sourceTree = "<group>"; };
 		3B91374D1EB7B62200DF73D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9137591EB7BB2C00DF73D9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3D13D80EC6CB9F91CE0733EB /* Pods-starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-starter/Pods-starter.debug.xcconfig"; sourceTree = "<group>"; };
 		4DE19B4112210304B5E4B951 /* Pods-starterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-starterUITests/Pods-starterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		594E4233D24EEBF9056A216C /* Pods_starterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_starterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B91375A1EB7BB2C00DF73D9 /* MapKit.framework in Frameworks */,
 				5E53292D81CE01451C916859 /* Pods_starter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +164,7 @@
 		74883E9FBDCF0DAFC540D6B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B9137591EB7BB2C00DF73D9 /* MapKit.framework */,
 				BAB5D6C5EA70D0B27BD19513 /* Pods_starter.framework */,
 				594E4233D24EEBF9056A216C /* Pods_starterTests.framework */,
 				18AE45974D8692774CB5B57C /* Pods_starterUITests.framework */,
@@ -711,6 +715,7 @@
 				3B9137521EB7B62200DF73D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B9137531EB7B62200DF73D9 /* Build configuration list for PBXNativeTarget "starterTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +724,7 @@
 				3B9137551EB7B62200DF73D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B9137561EB7B62200DF73D9 /* Build configuration list for PBXNativeTarget "starterUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +733,7 @@
 				3B9137581EB7B62200DF73D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

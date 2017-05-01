@@ -9,6 +9,8 @@ target 'starter' do
 
   pod 'SnapKit', '~> 3.2.0'
   pod 'Firebase', '~> 3.17.0'
+  pod 'Firebase/Database'
+
 
 
   target 'starterTests' do
